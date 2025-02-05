@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            header{
+                text-align: center;
+                font-weight: bold;
+                font-size: 50px;
+            }
+            footer{
+                text-align: right;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body style="background-color: #80ced6;">
+        <!--Header Tag-->
+        <header>Register Here</header>
+        <form>
+            <!--Using Field Set-->
+            <fieldset style="background-color:#d5f4e6;">
+            <legend>Registration Form</legend>
+
+            <h3>User Details</h3>
+            <!--Text-->
+            <label for="username">User Name :</label>
+            <input type="text" id="username" maxlength="10"><br><br>
+            <!--Password-->
+            <label for="password">Password :</label>
+            <input type="password" id="password"><br><br>
+            <label for="confirm">Confirm Password :</label>
+            <input type="password" id="confirm"><br><br>
+            <!--Email-->
+            <label for="email">Email :</label>
+            <input type="email" id="email"><br><br>
+            <!--tel-->
+            <label for="mobile">Mobile :</label>
+            <input type="tel" id="mobile" pattern="[0-9]{10}">
+
+            <h3>Gender</h3>
+            <!--Radio-->
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label><br><br>
+
+            <h3>Skills</h3>
+            <!--Checkbox-->
+            <input type="checkbox" id="language1">
+            <label for="language1">Python</label><br><br>
+            <input type="checkbox" id="language2">
+            <label for="language2">Java</label><br><br>
+            <input type="checkbox" id="language3">
+            <label for="language3">C++</label><br><br>
+
+            <h3>Graduation Year</h3>
+            <!--DropDown-->
+            <select id="year">
+                <option>2024</option>
+                <option>2023</option>
+                <option>2022</option>
+                <option>2021</option>
+                <option>2020</option>
+            </select><br><br>
+
+            <h3>Upload Resume</h3>
+            <!--Upload a file-->
+            <input type="file" id="resume"><br><br>
+            <!--Submit-->
+            <input type="submit" onclick="alert('Submitted Successfully')" value="Register">
+            <!--Button-->
+            <input type="reset" onclick="alert('Form Reset')">
+
+            </fieldset>
+        </form>
+        <!--Footer Tag-->
+        <footer>@Terms and Conditions</footer>
+    </body>
+</html>
