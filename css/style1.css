@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+}
+h2{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Lucida Handwriting', cursive;
+    padding: 20px;
+}
+.one{
+    background-color: rgb(131, 132, 132);
+    margin: 10px;
+}
+.two{
+    background-color: rgb(180, 179, 179);
+    margin: 10px;
+}
+#three{
+    background-color: rgb(220, 218, 218);
+    margin: 10px;
+}
+.linear{
+    padding: 100px;
+    margin: 10px;
+}
+.logistic{
+    padding: 100px;
+    margin: 10px;
+}
