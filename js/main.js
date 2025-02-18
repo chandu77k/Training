@@ -1,4 +1,3 @@
-window.onload=function(){
 let name="chandu";
 let age=21;
 let decision=true;
@@ -17,7 +16,7 @@ document.getElementById('arithmetic').innerHTML +="Subtraction : "+(number1-numb
 document.getElementById('arithmetic').innerHTML +="Multiplication : "+(number1*number2)+"<br>";
 document.getElementById('arithmetic').innerHTML +="Division : "+(number1/number2)+"<br>";
 document.getElementById('arithmetic').innerHTML +="Modulus : "+(number1%number2)+"<br>";
-}
+
 function greeting(){
     let name=document.getElementById('username').value;
     alert("welcome "+name);
