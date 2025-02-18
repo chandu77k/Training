@@ -28,6 +28,9 @@
                 margin: 10px;
                 font-family: cursive;
             }
+            p{
+                margin: 10px;
+            }
             #result1{
                 width: 300px;
                 height:200px;
@@ -53,6 +56,7 @@
             <button style="float: left;"><a href="./index.html" tabindex="1">Back to Home</a></button>
                 Java Script Task
             </header>
+            <h3>TypeOf input :</h3>
             <label for="inputtype">Enter the input : </label>
             <input type="text" id="data"> 
             <button type="submit" onclick="typefunction()">Click</button>
@@ -65,12 +69,14 @@
             <div id="result1"></div>
 
             <h3>Array Operations :</h3>
+            <p>Give input as (a,b,c,d)</p>
             <label for="inputarray">Enter Array :</label>
             <input type="text" id="inarray">
             <button type="submit" onclick="arrayfunction()">Click</button>
             <div id="result2"></div>
 
             <h3>Object Operations :</h3>
+            <p>Give input as ({"name":"xyz","age":"2","city":"abc"})</p>
             <label for="inputobject">Enter Object :</label>
             <input type="text" id="inobject">
             <button type="submit" onclick="objectfunction()">Click</button>
