@@ -1,3 +1,33 @@
+let name="chandu";
+let age=21;
+let decision=true;
+let inparray=["a","b","c","d"];
+let inpobject={"name":"chandu","age":21,"city":"Tadepalligudem"};
+document.getElementById('variables').innerHTML +="String variable : "+name+"<br>";
+document.getElementById('variables').innerHTML +="Number variable : "+age+"<br>";
+document.getElementById('variables').innerHTML +="Boolean variable : "+decision+"<br>";
+document.getElementById('variables').innerHTML +="Array declaration : "+inparray+"<br>";
+document.getElementById('variables').innerHTML +="Object declaration : "+JSON.stringify(inpobject)+"<br>";
+
+let number1=99;
+let number2=77;
+document.getElementById('arithmetic').innerHTML +="Addition : "+(number1+number2)+"<br>";
+document.getElementById('arithmetic').innerHTML +="Subtraction : "+(number1-number2)+"<br>";
+document.getElementById('arithmetic').innerHTML +="Multiplication : "+(number1*number2)+"<br>";
+document.getElementById('arithmetic').innerHTML +="Division : "+(number1/number2)+"<br>";
+document.getElementById('arithmetic').innerHTML +="Modulus : "+(number1%number2)+"<br>";
+
+function greeting(){
+    let name=document.getElementById('username').value;
+    alert("welcome "+name);
+}
+
+function area(){
+    let length=document.getElementById('length').value;
+    let breadth=document.getElementById('breadth').value;
+    let areaRectangle=length*breadth;
+    document.getElementById('rectangle').innerHTML="Area of rectangle : "+areaRectangle;
+}
 function typefunction(){
     let input=document.getElementById('data').value;
     let inputs=Number(input); //Converting to number

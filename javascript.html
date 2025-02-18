@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>Java Script Task</title>
-        <script src="./js/main.js"></script>
         <style>
             *{
                 margin: 0;
@@ -34,22 +33,52 @@
                 margin: 10px;
             }
             #result1{
-                width: 300px;
+                width: 350px;
                 height:200px;
                 background-color: bisque;
                 margin: 20px; 
             }
             #result2{
-                width: 300px;
+                width: 350px;
                 height:200px;
                 background-color: bisque;
                 margin: 20px; 
             }
             #result3{
-                width: 300px;
+                width: 350px;
                 height:200px;
                 background-color: bisque;
                 margin: 20px; 
+            }
+            #variables{
+                width: 350px;
+                height:200px;
+                background-color: aliceblue;
+                margin: 20px; 
+                
+            }
+            #variables:hover{
+                background-color: black;
+                transition-duration: 1s;
+                color: white;
+            }
+            #arithmetic{
+                width: 350px;
+                height:200px;
+                background-color: aliceblue;
+                margin: 20px; 
+            }
+            #arithmetic:hover{
+                background-color: black;
+                transition-duration: 1s;
+                color: white;
+            }
+            #rectangle{
+                margin: 20px;
+                width: 350px;
+                height: 50px;
+                background-color: bisque;
+                text-align: center;
             }
         </style>
     </head>
@@ -58,6 +87,25 @@
             <button style="float: left;"><a href="./index.html" tabindex="1">Back to Home</a></button>
                 Java Script Task
             </header>
+            <h3>Declare and Initialize variables :</h3>          
+            <div id="variables"></div>
+
+            <h3>Arithmetic Operations :</h3>          
+            <div id="arithmetic"></div>
+
+            <h3>Enter Your Name :</h3>
+            <label for="username">Your Name : </label>
+            <input type="text" id="username">
+            <button onclick="greeting()">Click</button>
+
+            <h3>Area of rectangle :</h3>
+            <label for="len">Enter the length : </label>
+            <input type="text" id="length"> 
+            <label for="brea">Enter the breadth : </label>
+            <input type="text" id="breadth"> 
+            <button type="submit" onclick="area()">Click</button>
+            <div id="rectangle"></div>
+
             <h3>TypeOf input :</h3>
             <label for="inputtype">Enter the input : </label>
             <input type="text" id="data"> 
@@ -83,5 +131,6 @@
             <input type="text" id="inobject">
             <button type="submit" onclick="objectfunction()">Click</button>
             <div id="result3"></div>
+            <script src="./js/main.js"></script>
     </body>
 </html>
