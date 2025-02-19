@@ -16,7 +16,8 @@
                 top: 0;
             }
         h3 {
-            margin: 30px;
+            margin: 15px;
+            font-family: cursive;
         }
         #output1 {
             margin: 15px;
@@ -54,6 +55,12 @@
             width: 300px;
             border-radius: 5px;
         }
+        label{
+            margin: 15px;
+        }
+        #natural{
+            margin-left: 15px;
+        }
     </style>
 </head>
 <body>
@@ -63,24 +70,24 @@
     </header>
     <h3>Check a number is Even or Odd</h3>
     <label for="evenOddInput">Enter a number: </label>
-    <input type="number" id="evenOddInput">
+    <input type="text" id="evenOddInput">
     <button onclick="checkEvenOdd()">Click...</button>
     <div id="output1"></div>
 
     <h3>Multiplication Table</h3>
     <label for="multiplicationInput">Enter a number: </label>
-    <input type="number" id="multiplicationInput">
+    <input type="text" id="multiplicationInput">
     <button onclick="multiplicationTable()">Click...</button>
     <div id="output2"></div>
 
     <h3>Day of the Week</h3>
     <label for="dayInput">Enter a day number (1-7): </label>
-    <input type="number" id="dayInput">
+    <input type="text" id="dayInput">
     <button onclick="getDayOfWeek()">Click...</button>
     <div id="output3"></div>
 
     <h3>Sum of the First 10 Natural Numbers</h3>
-    <button onclick="sumOfNaturalNumbers()">Click...</button>
+    <button id="natural" onclick="sumOfNaturalNumbers()">Click...</button>
     <div id="output4"></div>
 
     <h3>Reverse a String</h3>
