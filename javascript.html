@@ -52,9 +52,10 @@
             }
             #variables{
                 width: 350px;
-                height:200px;
+                height:100px;
                 background-color: aliceblue;
                 margin: 20px; 
+                overflow: hidden;
                 
             }
             #variables:hover{
@@ -64,9 +65,10 @@
             }
             #arithmetic{
                 width: 350px;
-                height:200px;
+                height:80px;
                 background-color: aliceblue;
                 margin: 20px; 
+                overflow: hidden;
             }
             #arithmetic:hover{
                 background-color: black;
@@ -87,11 +89,13 @@
             <button style="float: left;"><a href="./index.html" tabindex="1">Back to Home</a></button>
                 Java Script Task
             </header>
-            <h3>Declare and Initialize variables :</h3>          
-            <div id="variables"></div>
+            <h3>Declare and Initialize variables :</h3> 
+            <p>Click on the space...</p>         
+            <button id="variables" onclick="variablefunction()"></button>
 
             <h3>Arithmetic Operations :</h3>          
-            <div id="arithmetic"></div>
+            <p>Click on the space...</p>         
+            <button id="arithmetic" onclick="arithmeticfunction()"></button>
 
             <h3>Enter Your Name :</h3>
             <label for="username">Your Name : </label>

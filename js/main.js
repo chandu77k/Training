@@ -1,3 +1,4 @@
+function variablefunction(){
 let name="chandu";
 let age=21;
 let decision=true;
@@ -8,7 +9,8 @@ document.getElementById('variables').innerHTML +="Number variable : "+age+"<br>"
 document.getElementById('variables').innerHTML +="Boolean variable : "+decision+"<br>";
 document.getElementById('variables').innerHTML +="Array declaration : "+inparray+"<br>";
 document.getElementById('variables').innerHTML +="Object declaration : "+JSON.stringify(inpobject)+"<br>";
-
+}
+function arithmeticfunction(){
 let number1=99;
 let number2=77;
 document.getElementById('arithmetic').innerHTML +="Addition : "+(number1+number2)+"<br>";
@@ -16,7 +18,7 @@ document.getElementById('arithmetic').innerHTML +="Subtraction : "+(number1-numb
 document.getElementById('arithmetic').innerHTML +="Multiplication : "+(number1*number2)+"<br>";
 document.getElementById('arithmetic').innerHTML +="Division : "+(number1/number2)+"<br>";
 document.getElementById('arithmetic').innerHTML +="Modulus : "+(number1%number2)+"<br>";
-
+}
 function greeting(){
     let name=document.getElementById('username').value;
     alert("welcome "+name);
