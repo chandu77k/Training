@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Java Script Task</title>
+    <script src="./js/main2.js"></script>
+    <style>
+        * {
+            margin: 0;
+        }
+        header{
+                margin-bottom: 10px;
+                padding: 20px; 
+                background-color:  black; 
+                text-align: center; 
+                color: whitesmoke;
+                position: sticky;
+                top: 0;
+            }
+        h3 {
+            margin: 15px;
+            font-family: cursive;
+            }
+        #factorial {
+            margin: 15px;
+            background-color: bisque;
+            height: 30px;
+            width: 300px;
+            border-radius: 5px;
+        }
+        #maximum {
+            margin: 15px;
+            background-color: bisque;
+            height: 30px;
+            width: 300px;
+            border-radius: 5px;
+        }
+        label{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button style="float: left;"><a href="./index.html" tabindex="1">Back to Home</a></button>
+            Java Script Task
+    </header>
+    
+    <h3>Factorial :</h3>
+    
+        <label for="factorialInput">Enter a number for factorial: </label>
+        <input type="text" id="factorialInput" value="5">
+        <button onclick="factorialFunctions()">Click...</button>
+        <div id="factorial"></div>
+        <br>
+
+    <h3>Maxium element in array :</h3>
+    
+        <label for="arrayInput">Enter an array of numbers (comma-separated): </label>
+        <input type="text" id="arrayInput" value="3, 7, 2, 5, 10">
+        <button onclick="maxFunctions()">Click...</button>
+        <div id="maximum"></div>
+        <br>
+    <div>
+        <p id="factorialResult"></p>
+        <p id="largestResult"></p>
+    </div>
+</body>
+</html>
