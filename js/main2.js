@@ -3,11 +3,14 @@
     console.log("Factorial of " + num + " is: " + factorial(num));
 })();
 
+
 function findLargestElement(arr) {
     if (arr.length === 0) return "Array is empty";
     return Math.max(...arr);
 }
 
+
+// Using arrow function
 const findLargestArrow = (arr) => {
     if (arr.length === 0) return "Array is empty";
     return Math.max(...arr);
@@ -20,6 +23,7 @@ function maxFunctions(){
     const largestArrowResult = findLargestArrow(array);
     document.getElementById("maximum").innerHTML = "Largest element in array "+ array +" : " +largestElement;
 }
+
 
 const factorialExpression = function(num) {
     let result = 1;
@@ -40,9 +44,15 @@ function factorial(num) {
 
 function factorialFunctions() {
     const num = document.getElementById("factorialInput").value;
-    const factorialResult = factorial(num);
-    const factorialExprResult = factorialExpression(num);
-    document.getElementById("factorial").innerHTML = "Factorial of "+num+ " :"+ factorialExprResult;
+    if(isNaN(num)){
+        document.getElementById("factorial").innerHTML = "Enter valid Number";
+    }
+    else{
+        const factorialResult = factorial(num);
+        const factorialExprResult = factorialExpression(num);
+        document.getElementById("factorial").innerHTML = "Factorial of "+num+ " :"+ factorialExprResult;
+    }
+        
     
 }
 
