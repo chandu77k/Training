@@ -51,8 +51,6 @@ function factorialFunctions() {
         const factorialResult = factorial(num);
         const factorialExprResult = factorialExpression(num);
         document.getElementById("factorial").innerHTML = "Factorial of "+num+ " :"+ factorialExprResult;
-    }
-        
-    
+    }  
 }
 
