@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Day 2 Task</title>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/jQuery2.js"></script>
+    <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      outline: none;
+      background-color: bisque;
+    }
+    header{
+       background-color: black;
+        color: whitesmoke;
+        text-align: center;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+    .hoverdiv{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .menu{
+         display: none;
+         list-style: none;
+    }
+    .menu:hover{
+        list-style: none;
+        display: block;
+        padding: 10px;
+    }
+    .fadediv img{
+        height: 200px;
+        width: 300px;
+    }
+    .fadediv{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+   .animation{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50vh;
+        width: 100%;
+    }
+    .animate{
+        height: 100px;
+        width: 100px;
+        background-color: black;
+    }
+    .carouseldiv{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .slidediv{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .carousel {
+        width: 300px;
+        overflow: auto;
+        position: relative;
+        margin: auto;
+    }
+    .carousel img {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    .carousel img.active {
+        display: block;
+    }
+    .carousel-controls {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .carousel-controls button {
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+    #f,#f1,.sl{
+        height: 90px;
+        display: flex;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <header>jQuery Task Day-2
+        <button style="float: left;"><a href="./index.html" tabindex="1">Back to Home</a></button>
+    </header>
+    
+    <div class="hoverdiv">
+        <p>Hover on this...</p>
+        <ul class="menu">
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+        </ul>
+    </div>
+    
+    <div class="fadediv">
+        <button id="fade">Click to fade the image</button>
+        <img src="./images/image2.jpg" alt="fadingimage">
+    </div>
+         
+    <div class="slidediv">
+        <div id="f">this is a paragraph to implement slide up and down</div>
+        <div class="sl">
+        <button id="slideup">Click to perform slide toggle</button>
+        </div>
+        <div id="f1"></div>
+    </div>
+
+    <div class="animation" >
+        <button id="animate">start the animation</button>
+    <div class="animate"></div>
+    </div>
+         
+    <div class="carouseldiv">
+        <div class="carousel">
+        <img src="./images/audi.jpg" alt="Image 1" class="active">
+        <img src="./images/benz.jpg" alt="Image 2">
+        <img src="./images/bugatti.jpg" alt="Image 3">
+        </div>
+        
+        <div class="carousel-controls">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+    </div>
+
+</body>
+</html>
