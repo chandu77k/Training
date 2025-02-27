@@ -26,5 +26,6 @@ $(document).ready(function () {
 
     $("#highlight").click(function () {
         $("#myTable tr:odd").css("background-color", "LightSkyBlue");
+        $("#myTable tr:even").css("background-color", "MediumSlateBlue");
     });
 });
