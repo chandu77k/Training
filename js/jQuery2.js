@@ -5,7 +5,6 @@ $(document).ready(function(){
         $('.menu').fadeOut('slow');
       });
 
-
       $("#fade").click(function(){
         $("img").fadeToggle(2000);
       })

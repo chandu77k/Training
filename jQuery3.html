@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Day-3 Task</title>
+        <script src="./js/jquery-3.7.1.js"></script>
+        <script src="./js/jQuery3.js"></script>
+        <style>
+            *{
+                margin: 0;
+            }
+            body{
+                background-color: bisque;
+            }
+            header{
+                background-color: black;
+                color: whitesmoke;
+                text-align: center;
+                padding: 20px;
+                position: sticky;
+                top: 0;
+                width: 100%;
+            }
+            #firstdiv{
+                margin: 10px;
+                padding: 20px;
+            }
+            #modify{
+                margin: 10px;
+            }
+            #seconddiv{
+                margin: 10px;
+                padding: 20px;
+            }
+            #clone{
+                margin: 10px;
+            }
+            #thirddiv{
+                margin: 10px;
+                padding: 20px;
+            }
+            #findParent{
+                margin: 10px;
+            }
+            #findhildren{
+                margin: 10px;
+            }
+            #fourthdiv{
+                margin: 10px;
+                padding: 20px;
+            }
+            #addItem{
+                margin: 10px;
+            }
+            #removeItem{
+                margin: 10px;
+            }
+            #fifthdiv{
+                margin: 10px;
+                padding: 20px;
+            }
+            #highligth{
+                margin: 10px;
+            }
+            #original{
+                margin: 10px;
+            }
+            table, th, td {
+                border: 1px solid;
+            }
+            table{
+                border-collapse: collapse;
+            }
+            #highlight{
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>jQuery Day-3 Task
+            <button style="float: left;"><a href="./index.html" tabindex="1">Back to Home</a></button>
+        </header>
+
+        <div id="firstdiv">
+        <ul id="myList">
+            <li>Chandu</li>
+            <li>Dhanush</li>
+            <li>Venkat</li>
+        </ul>
+        <button id="modify">Modify Item</button>
+        </div>
+
+        <div id="seconddiv">
+        <div id="container">
+            <p id="original">Original Paragraph</p>
+        </div>
+        <button id="clone">Clone & Append</button>
+        </div>
+
+        <div id="thirddiv">
+        <div id="parentDiv">
+            <p id="child">Child Paragraph</p>
+        </div>
+        <button id="findParent">Find Parent</button>
+        <button id="findChildren">Find Children</button>
+        </div>
+
+        <div id="fourthdiv">
+        <ul id="dynamicList">
+            <li>Item</li>
+        </ul>
+        <button id="addItem">Add Item</button>
+        <button id="removeItem">Remove Item</button>
+        </div>
+
+        <div id="fifthdiv">
+        <table id="myTable">
+            <tr><th>Names</th></tr>
+            <tr><td>Chandu</td></tr>
+            <tr><td>Dhanush</td></tr>
+            <tr><td>Venkat</td></tr>
+            <tr><td>Jagadeesh</td></tr>
+        </table>       
+        <button id="highlight">Highlight Rows</button>
+        </div>
+    </body>
+</html>
