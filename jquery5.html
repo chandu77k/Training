@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Plugins Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <style>
+        body {
+            font-family: cursive;
+            text-align: center;
+            margin: 0;
+        }
+        header{
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        #draggable-box {
+            width: 100px;
+            height: 100px;
+            background: lightblue;
+            text-align: center;
+            line-height: 100px;
+            margin: 20px auto;
+            cursor: move;
+        }
+        .slider {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>jQuery Day-5 Task
+        <button style="float: left;"><a href="./index.html" tabindex="1">Back to Home</a></button>
+    </header>
+
+    <h2>jQuery Date Picker</h2>
+    <input type="text" id="datepicker">
+
+    <h2>Draggable Box</h2>
+    <div id="draggable-box">Drag me</div>
+
+    <h2>Image Carousel</h2>
+    <div class="slider">
+        <div><img src="./images/audi.jpg" alt="Image1"></div>
+        <div><img src="./images/bugatti.jpg" alt="Image2"></div>
+        <div><img src="./images/ferrari.jpg" alt="Image3"></div>
+        <div><img src="./images/lambo.jpg" alt="Image4"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#datepicker").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: "dd-mm-yy",
+                minDate: 0,
+                maxDate: "+1Y"
+            });
+
+            $("#draggable-box").draggable();
+
+            $(".slider").slick({
+                autoplay: true,
+                autoplaySpeed: 1000,
+            });
+        });
+    </script>
+
+</body>
+</html>

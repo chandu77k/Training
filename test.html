@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX Examples</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #loading { display: none; }
+  </style>
+</head>
+<body>
+
+  <h2>Fetch Data from Public API</h2>
+  <button id="fetchDataBtn">Fetch Data</button>
+  <div id="loading">Loading...</div>
+  <div id="dataContainer"></div>
+
+  <h2>Submit Form with AJAX</h2>
+  <form id="myForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="responseMessage"></div>
+
+  <script>
+    // Fetch Data Example
+    $('#fetchDataBtn').click(function() {
+      $('#loading').show();
+      
+      $.ajax({
+        url: 'https://jsonplaceholder.typicode.com/posts',
+        type: 'GET',
+        success: function(data) {
+          $('#loading').hide();
+          let output = '<ul>';
+          data.forEach(post => {
+            output += `<li><strong>${post.title}</strong><p>${post.body}</p></li>`;
+          });
+          output += '</ul>';
+          $('#dataContainer').html(output);
+        },
+        error: function(xhr, status, error) {
+          $('#loading').hide();
+          $('#dataContainer').html('<p>Error fetching data!</p>');
+        }
+      });
+    });
+
+    // Form Submission Example
+    $('#myForm').submit(function(e) {
+      e.preventDefault();
+      $('#loading').show();
+      $('#responseMessage').empty();
+      
+      const formData = { username: $('#username').val() };
+
+      $.ajax({
+        url: 'https://jsonplaceholder.typicode.com/posts',
+        type: 'POST',
+        data: JSON.stringify(formData),
+        contentType: 'application/json',
+        success: function(response) {
+          $('#loading').hide();
+          $('#responseMessage').html('<p>Form submitted successfully!</p>');
+        },
+        error: function(xhr, status, error) {
+          $('#loading').hide();
+          if (xhr.status === 403) {
+            $('#responseMessage').html('<p>Forbidden: You don\'t have permission to access this resource.</p>');
+          } else if (xhr.status === 500) {
+            $('#responseMessage').html('<p>Server error: Please try again later.</p>');
+          } else {
+            $('#responseMessage').html('<p>Error submitting the form!</p>');
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
