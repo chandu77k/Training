@@ -14,7 +14,6 @@ $(document).ready(function(){
       })
 
       $("#animate").click(function(){
-
         $(".animate").animate({
           left: '500px',
           opacity: '0.5',
