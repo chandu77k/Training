@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sort Array</title>
+</head>
+<body>
+    <script>
+        function sortArray(arr) {
+            return arr.sort((a, b) => a - b);
+        }
+        function getInputAndSort() {
+            const input = document.getElementById("numberInput").value;
+            const numbers = input.split(',').map(Number);
+            const sortedNumbers = sortArray(numbers);
+            document.getElementById("result").innerText = "Sorted Array: " + sortedNumbers.join(', ');
+        }
+    </script>
+    <h1>Sorted Array</h1>
+    <form>
+        <input type="text" id="numberInput">
+        <button id="buttons" type="button" onclick="getInputAndSort()">Result</button>
+        <p id="result"></p>
+    </form>
+</body>
+</html>
+</html>

@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Exam</title>
+    <style>
+        .active {
+            background-color: yellow;
+        }
+        ol{
+            width: 25%;
+        }
+    </style>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("li").click(function(){
+                $(this).toggleClass("active");
+            });
+        });
+    </script>
+</head>
+<body>
+    <ol type="1">
+        <li>Chandu</li>
+        <li>Dhanush</li>
+        <li>Venkat</li>
+        <li>Smitha</li>
+        <li>Pallavi</li>
+    </ol>
+</body>
+</html>
