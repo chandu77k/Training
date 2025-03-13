@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { SortPipe } from '../sort.pipe';
+import { ProductComponent } from "../product/product.component";
 
 @Component({
   selector: 'app-mart',
-  imports: [CommonModule, SortPipe],
+  imports: [CommonModule, SortPipe, ProductComponent],
   templateUrl: './mart.component.html',
   styleUrl: './mart.component.css'
 })
@@ -21,4 +22,10 @@ export class MartComponent {
     { name: 'Peach', color: 'pink', price: 110 },
     { name: 'Watermelon', color: 'green', price: 90 }
   ];
+  parentMessage = "Hello from parent";
+  childMessage = " ";
+  
+  receiveMessage(message : string){
+    this.childMessage = message;
+  }
 }
