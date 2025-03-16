@@ -9,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
   imports: [CommonModule],
   providers: [GetDataService],
   templateUrl: './fetch.component.html',
-  styleUrls: ['./fetch.component.css']
-})
+  styleUrls: ['./fetch.component.css'],
+  })
 export class FetchComponent implements OnInit {
   data: any;
 

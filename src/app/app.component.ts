@@ -3,9 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { MartComponent } from './mart/mart.component';
 import { FetchComponent } from './fetch/fetch.component';
 import { provideHttpClient } from '@angular/common/http';
+import { ProductComponent } from './product/product.component';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,MartComponent,FetchComponent],
+  standalone: true,
+  imports: [RouterModule, RouterOutlet,MartComponent,FetchComponent,ProductComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -5,6 +5,7 @@ import { ProductComponent } from "../product/product.component";
 
 @Component({
   selector: 'app-mart',
+  standalone: true,
   imports: [CommonModule, SortPipe, ProductComponent],
   templateUrl: './mart.component.html',
   styleUrl: './mart.component.css'
