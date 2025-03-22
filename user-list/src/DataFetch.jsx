@@ -5,9 +5,10 @@ const Fetches = ({setExtractedData}) => {
         axios.get('https://jsonplaceholder.typicode.com/users')
         .then((response)=> {
             setExtractedData(response.data);
+            localStorage.setItem('users', JSON.stringify(response.data));
         })
     },[]);
 
-    return ('');
+    return (localStorage.getItem('users'));
 }
 export default Fetches;
