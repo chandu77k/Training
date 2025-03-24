@@ -15,12 +15,12 @@ const Sorting = ({data, setFilteredData}) => {
     return(
         <>
         <form>
-    <label htmlFor="sortings">Sort By : </label>
-    <select name="sort" id="sort" value={sorted} onChange={handleSort}>
+        <label htmlFor="sortings">Sort By : </label>
+        <select name="sort" id="sort" value={sorted} onChange={handleSort}>
         <option value="">None</option>
         <option value="amount">Amount(High-Low)</option>
-    </select>
-    </form>
+        </select>
+        </form>
         </>
     );
 }
