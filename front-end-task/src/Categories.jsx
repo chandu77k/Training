@@ -26,7 +26,7 @@ const Categories = () => {
         <Col className="category-item" xs={1}>
           <Image
             src={bike}
-            alt="2-Hour Delivery"
+            alt="Delivery"
             rounded
             className="category-img"
           />

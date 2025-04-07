@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;  
+  overflow-x:hidden;
 }
 
 body {
@@ -10,19 +11,21 @@ body {
   flex-direction: column;
   height: 100%; 
   background-color: #f8f9fa;
+  overflow-x:hidden;
 }
 
 #root {
   width: 100% !important; 
   height: 100% !important;
 }
-
-.navbar {
+.navBars{
   position: sticky;
   top: 0;
+  z-index: 1000;
+}
+.navbar {
   width: 100%;
-  background-color: white;
-  z-index: 1000; 
+  background-color: white; 
   display: block; 
 }
 .brand-logo {
@@ -118,10 +121,160 @@ body {
 .category-item span {
   font-size: 12px;
 }
+h3{
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+.fullTabs{
+  padding: 25px;
+}
+.cards-tab{
+  display:flex;
+  flex-direction: row;
+}
+.cards{
+  transition: transform .5s;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.strike{
+  color: rgb(130, 129, 129);
+}
+.logo-position{
+  position: relative;
+   width: 24px; 
+   height: 24px; 
+}
+.title-color{
+  color: #4c4d27;
+}
+.title-content{
+  align-items: center;
+  justify-content: center;
+  
+}
+.logo-center{
+  align-items: center;
+  justify-content: center;
+}
+.tabs-bg{
+  background-color: #f7f8f1;
+}
+.birthdayCard1{
+  margin-top: 5px;
+}
+.birthdayCard1:hover{
+  cursor: pointer;
+  transform: scale(1.05); 
+}
+.viewAll{
+  position: relative;
+  left: 40%;
+  width: 250px;
+  color: #7d8035;
+  background-color: #f7f9f2;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #7d8035;
+}
+.viewAll:hover{
+  border: 1px solid #7d8035
+}
+.flower-image{
+  position: relative;
+  left: 50px;
+  width: 600px;
+  height: 500px;
+  border-radius: 25px;
 
-
-
-
-
-
+}
+.bread{
+  position: relative;
+  left: 70px;
+}
+.link-detail{
+  display: flex;
+  flex-direction: row;
+}
+.full-category{
+  display: flex;
+  flex-direction: row;
+}
+.image-container{
+  width: 750px;
+}
+.image-details{
+  width: 600px;
+}
+.link-color{
+  color: rgb(130, 129, 129);
+}
+.right-side-data{
+  display: flex;
+  flex-direction: column;
+}
+.mobile-number{
+  width: auto;
+}
+.date-picker-input {
+  position: relative;
+  left: -20px;
+  margin-top: -15px;
+  background-image: url('https://img.icons8.com/ios-filled/50/000000/calendar.png');
+  background-repeat: no-repeat;
+  background-position: right 10px center; 
+  background-size: 20px; 
+  width: 200px;
+  max-width: 600px;
+}
+.image-detail{
+  margin-bottom: -10px;
+}
+.date{
+  border-bottom: 2px solid rgb(207, 208, 209);
+}
+.offer-details{
+  margin-top: 10px;
+}
+.paytm-logo{
+  width: 80px;
+  height: 80px;
+}
+.paytm-class{
+  display: flex;
+  flex-direction: row;
+}
+.paytm-details{
+  margin-top: 12px;
+  align-self: center;
+}
+.paytm-bg{
+  border: 1px solid #BCCFFF;
+  background-color: #F5F8FF;
+}
+.info-logo{
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+.addCart{
+  border-radius: 15px;
+  border: 1px solid #7d8035;
+  color: #7d8035;
+  width: 280px;
+  height: 60px;
+  margin-right: 50px;
+}
+.bookNow{
+  border-radius: 15px;
+  background-color: #7d8035;
+  color: white;
+  width: 280px;
+  height: 60px;
+}
+.addCart:hover{
+  border: 2px solid #7d8035;
+}
+.bookNow:hover{
+  border: 2px solid #7d8035;
+}
 

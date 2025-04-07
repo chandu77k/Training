@@ -16,7 +16,7 @@ function NavBar1() {
   return (
     <Navbar className="bg-body-tertiary navbar">
       <Container fluid>
-        <Navbar.Brand className="brand-logo">
+        <Navbar.Brand className="brand-logo" href='/'>
           <img
             src={fnplogo}
             width="70"
@@ -36,7 +36,7 @@ function NavBar1() {
         />
         </div>
         <div className="loc-modal">
-          <h6>Where to deliver? <br /><p style={{color:'red'}}>Location missing</p></h6>
+          <h6>Where to deliver? <br /><p style={{color:'red'}}>Location missing ▼ </p></h6>
         </div>
         </div>
 
