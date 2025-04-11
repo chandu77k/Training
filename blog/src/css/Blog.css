@@ -1,0 +1,47 @@
+
+.stack-place{
+    position: relative;
+    right: 10px;
+}
+.blog-images{
+    width: 200px;
+    height: 150px;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+}
+.blog-space{
+    margin: 8px;
+}
+.container-profile{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 25px;
+}
+.image-size{
+    width: 20px;
+    height: 20px;
+}
+.profile-name{
+    position: relative;
+    right: 30px;
+    top: 2px;
+}
+.likes-seen{
+    position: relative;
+    top: 2px;
+    display: flex;
+    flex-direction: row;
+    color: #535354;
+}
+.fill-color{
+    opacity: 0.5;
+}
+.likes{
+    margin-left: 5px;
+}
+.seen{
+    margin-left: 5px;
+}
