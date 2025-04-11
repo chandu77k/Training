@@ -1,0 +1,42 @@
+.navbar2 {
+    position: relative;
+    left: 9%;
+}
+
+.secondbar {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+@media (max-width: 1200px) {
+    .navbar2 {
+        left: 3%;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar2 {
+        left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .secondbar .nav-link,
+    .secondbar .dropdown-toggle {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar2 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .secondbar .nav-link,
+    .secondbar .dropdown-toggle {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+    .secondbar .dropdown-menu {
+        font-size: 13px;
+    }
+}
